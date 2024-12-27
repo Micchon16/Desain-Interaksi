@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIGN</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Know<span>Ledge</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li><a href="home.php">Home</a></li>
+                    <li class="current"><a href="#">About</a></li>
+                    <li><a href="shop.html">Product</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="go-premium-cta"><a href="logout.php">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+  </body>
+
+  <div class="section">
+  		<div class="containers">
+  			<div class="content-section">
+  				<div class="title">
+  					<h1>About Us</h1>
+  				</div>
+  				<div class="content">
+  					<h3>KnowLegde, where fashions begin.</h3>
+  					<p>At KnowLegde, we provide the best quality clothes with a very cheap price
+  					to make sure everybody in the world has the best clothes branding in there closet.
+  			    Our product are the latest trend made with care by our profesional designer which has
+  					decades of experience.</p>
+  					<div class="button">
+  						<a href="">Read More</a>
+  					</div>
+  				</div>
+  				<div class="social">
+  					<a href=""><i class="fab fa-facebook-f"></i></a>
+  					<a href=""><i class="fab fa-twitter"></i></a>
+  					<a href=""><i class="fab fa-instagram"></i></a>
+  				</div>
+  			</div>
+  			<div class="image-section">
+  				<img src="images/img one.jpg">
+  			</div>
+  		</div>
+  	</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and IOS mobile phone</p>
+            <div class="app-logo">
+              <img src="images/play-store.png">
+              <img src="images/app-store.png">
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <p>Our Purpose Is To Sustainably Make The Pleasure And Benefit of Sports Accessible to the Many.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Usefull Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</html>
